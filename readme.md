@@ -25,3 +25,13 @@ And from the agent to the client the response queue is in the ``reply-to`` field
 
 
 Solving the queue problem like this makes all processes more or less stateless. Meaning they can be substituted on the fly.
+### Testing
+The program was manually tested to verify the correct flow. All messages were correctly routed between clients, agents, and buildings. An improvement point is that a request to a non-existent building gets stuck without proper handling.
+
+# Diagrams
+### Client - Agent
+![Client - Agent](./docs/Client_Agent.png)
+### Agent - Building
+![Agent - Building](./docs/Agent_Building.png)
+### Building - Agent - Client
+![Building - Agent - Client](./docs/Building_Agent_Client.png)
